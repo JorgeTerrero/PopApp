@@ -1,0 +1,32 @@
+<div class="row">
+  <div class="col-md-12">
+       <div class="card">
+         <div class="card-header text-center bg-dark text-white">Company</div>
+         <div class="card-body">
+
+          <form [formGroup]="companyForm" (ngSubmit)="CreateCompany()" method="POST">
+            <div class="form-group">
+              <label class="col-form-label col-3" for="">Nombre de la compañia</label>
+              <input type="text" name="name" id="name" formControlName="name" class="form-control" placeholder="Insert el nombre">
+            </div>
+            <div class="form-group">
+              <label class="col-form-label col-3" for="">Codigo de la compañia</label>
+              <input type="text" name="code" id="code" formControlName="code" class="form-control" placeholder="Insert el nombre">
+            </div>
+            <div class="form-group">
+              <label class="col-form-label col-3" for="">Direccion de la compañia</label>
+              <input type="text" name="adress" id="adress" formControlName="adress" class="form-control" placeholder="Insert el nombre">
+            </div>
+            <div class="form-group">
+              <label class="col-form-label col-3" for="">Phone de la compañia</label>
+              <input type="text" name="phone" id="phone" formControlName="phone" class="form-control" placeholder="Insert el nombre">
+            </div>
+            <div class="form-group">
+              <button class="btn btn-primary btn-block">Guardar</button>
+            </div>
+          </form>
+
+         </div>
+       </div>
+  </div>
+</div>
